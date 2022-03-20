@@ -49,9 +49,28 @@ const MuiButton = () => {
             </Stack>
             <Stack spacing={2} direction='row'>
 
-                <Button variant='contained' startIcon={<Send />} color='primary' disableRipple onClick={() => alert('click')}>Send</Button>
-                <Button variant='contained' endIcon={<Send />} color='secondary' disableElevation>Send</Button>
-                <IconButton aria-label='send' color='success' size='small'>
+                <Button
+                    variant='contained'
+                    startIcon={<Send />}
+                    color='primary'
+                    disableRipple
+                    onClick={() => alert('click')}
+                >
+                    Send
+                </Button>
+                <Button
+                    variant='contained'
+                    endIcon={<Send />}
+                    color='secondary'
+                    disableElevation
+                >
+                    Send
+                </Button>
+                <IconButton
+                    aria-label='send'
+                    color='success'
+                    size='small'
+                >
                     <Send />
                 </IconButton>
             </Stack>
@@ -68,6 +87,7 @@ const MuiButton = () => {
                     <Button color='error'>Error</Button>
                 </ButtonGroup>
             </Stack>
+
             <Stack direction={'row'}>
                 <ToggleButtonGroup
                     aria-label='text-formatting'
@@ -88,8 +108,8 @@ const MuiButton = () => {
                         <FormatUnderlined />
                     </ToggleButton>
                 </ToggleButtonGroup>
-
             </Stack>
+
 
         </Stack>
     )
