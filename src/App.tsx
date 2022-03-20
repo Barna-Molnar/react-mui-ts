@@ -4,7 +4,7 @@ import MuiTypography from './components/MuiTypography';
 function App() {
   return (
     <div className="App">
-      <MuiTypography />
+      {/* <MuiTypography /> */}
       <MuiButton />
     </div>
   );
