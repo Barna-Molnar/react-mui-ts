@@ -41,7 +41,7 @@ const MuiAccordion = () => {
             </Accordion>
             <Accordion
                 expanded={expanded === 'panel3'}
-                onChange={(_event, isExpanded) => handleChange(isExpanded, 'panel1')}>
+                onChange={(_event, isExpanded) => handleChange(isExpanded, 'panel3')}>
                 <AccordionSummary
                     id='panel3-header'
                     aria-controls='panel3-content'
