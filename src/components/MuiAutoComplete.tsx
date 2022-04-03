@@ -13,13 +13,12 @@ const skillsOptions: Array<Skill> = skills.map((skill, index) => ({
     label: skill
 }))
 
-console.log(skillsOptions)
-
 const MuiAutoComplete = () => {
 
     const [value, setValue] = useState<string | null>(null)
 
     const [skill, setSkill] = useState<Skill | null>(null)
+
     console.log({ value })
     console.log({ skill })
 
@@ -34,13 +33,13 @@ const MuiAutoComplete = () => {
                 onChange={handleChange}
                 options={skills}
                 // freeSolo  in order to type any string in the box
-                renderInput={(params) => <TextField {...params} label='Skills from Array' />} />
+                renderInput={(params) => <TextField {...params} label='Skills from Array<String>' />} />
             <Autocomplete
                 value={skill}
                 onChange={(_e: any, newValue: Skill | null) => setSkill(newValue)}
                 options={skillsOptions}
                 // freeSolo  in order to type any string in the box
-                renderInput={(params) => <TextField {...params} label='Skills from Object' />} />
+                renderInput={(params) => <TextField {...params} label='Skills from Array<Skill>' />} />
         </Stack>
     )
 }
